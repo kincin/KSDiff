@@ -48,23 +48,23 @@
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">KSDiff: Keyframe-Augmented Speech-Aware Dual-Path Diffusion for Facial Animation</h1>
           <div class="is-size-5 publication-authors">
-            <span class="author-block">Tianle Lyu</span>,
-            <span class="author-block"><a href="https://danny-nus.github.io/" target="_blank">Junchuan Zhao</a></span>,
-            <span class="author-block"><a href="https://www.comp.nus.edu.sg/cs/people/wangye/" target="_blank">Ye Wang</a></span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">National University of Singapore</span>
-          </div>
-
-          <div class="is-size-5 publication-authors" style="margin-top: 1rem;">
+            <span class="author-block">Tianle Lyu<sup>†</sup>,</span>
             <span class="author-block">
-              <b>Conference:</b> 
-              <a href="https://2026.ieeeicassp.org/" target="_blank" rel="noopener">ICASSP 2026</a> (Under Review)
+              <a href="https://danny-nus.github.io/" target="_blank">Junchuan Zhao</a><sup>†</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.comp.nus.edu.sg/cs/people/wangye/" target="_blank">Ye Wang</a>
             </span>
           </div>
 
-          <div class="publication-links">
+          <div class="is-size-6 publication-authors" style="margin-top: 0.5rem; font-style: italic;">
+            <span class="author-block"><sup>†</sup> Equal contribution</span>
+          </div>
+          <div class="is-size-5 publication-authors" style="margin-top: 0.5rem;">
+            <span class="author-block">National University of Singapore</span>
+          </div>
+
+          <div class="publication-links" style="margin-top: 0.5rem;">
             <span class="link-block">
               <a class="external-link button is-normal is-rounded is-dark" 
                 href="https://arxiv.org/pdf/2509.20128" 
@@ -92,11 +92,9 @@
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
 </section>
 
-
-<section class="section">
+<section class="section" style="margin-top: -3em;">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
@@ -105,26 +103,38 @@
           <div class="columns is-centered">
             <div class="column is-full has-text-centered">
               <figure class="image is-inline-block">
-                <embed src="./static/images/pipeline.pdf" type="application/pdf" 
-                      width="600px" height="400px" />
-                <figcaption style="margin-top: 0.5rem; text-align: center; font-style: italic; width: 600px;">
-                  Model pipeline illustration.
+                <img src="./static/images/pipeline.png" 
+                    alt="Pipeline"
+                    style="max-width: 100%; height: auto;" />
+                <figcaption style="margin-top: 0.5rem; text-align: left; font-size: 0.9rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+                  <b>Figure. Overview of KSDiff.</b> 
+                  Input audio is processed by the <b>Dual-Path Speech Encoder (DPSE)</b> to disentangle 
+                  expression- and head-pose-related features. The <b>Keyframe Establishment Learning (KEL)</b> 
+                  module extracts corresponding keyframe sequences, which together with the disentangled features 
+                  are fed into Dual-Path Motion Generators to produce head-pose and expression coefficients.
                 </figcaption>
               </figure>
             </div>
           </div>
-
       </div>
     </div>
   </div>
-
 </section>
 
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>will be released upon acceptance.</code></pre>
+    <pre><code>@misc{lyu2025ksdiffkeyframeaugmentedspeechawaredualpath,
+  title={KSDiff: Keyframe-Augmented Speech-Aware Dual-Path Diffusion for Facial Animation}, 
+  author={Tianle Lyu and Junchuan Zhao and Ye Wang},
+  year={2025},
+  eprint={2509.20128},
+  archivePrefix={arXiv},
+  primaryClass={cs.GR},
+  url={https://arxiv.org/abs/2509.20128}, 
+}
+    </code></pre>
   </div>
 </section>
 
