@@ -102,15 +102,17 @@
         <div class="content has-text-justified">
           <div class="columns is-centered">
             <div class="column is-full has-text-centered">
-              <div class="content has-text-justified">
-              <p>
-              Input audio is processed by the <b>Dual-Path Speech Encoder (DPSE)</b> to disentangle expression- and head-pose-related features. The <b>Keyframe Establishment Learning (KEL)</b> module extracts corresponding keyframe sequences, which together with the disentangled features are fed into Dual-Path Motion Generators to produce head-pose and expression coefficients.
-              </p>
-              </div>
-                <figure class="image is-inline-block">
+              <figure class="image is-inline-block">
                 <img src="./static/images/pipeline.png" 
                     alt="Pipeline"
                     style="max-width: 100%; height: auto;" />
+                <figcaption style="margin-top: 0.5rem; text-align: left; font-size: 0.9rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+                  <b>Figure. Overview of KSDiff.</b> 
+                  Input audio is processed by the <b>Dual-Path Speech Encoder (DPSE)</b> to disentangle 
+                  expression- and head-pose-related features. The <b>Keyframe Establishment Learning (KEL)</b> 
+                  module extracts corresponding keyframe sequences, which together with the disentangled features 
+                  are fed into Dual-Path Motion Generators to produce head-pose and expression coefficients.
+                </figcaption>
               </figure>
             </div>
           </div>
@@ -124,6 +126,44 @@
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3 has-text-centered">Generated Results</h2>
+      </div>
+    </div>
+
+    <!-- <h3 class="title is-4 has-text-left" style="margin-bottom: 1rem;">KSDiff (Ours)</h3> -->
+      <div class="columns is-centered" style="margin-top: 1rem;">
+      <div class="column is-one-quarter">
+        <video autoplay muted controls style="width: 100%;">
+          <source src="./static/videos/people1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="column is-one-quarter">
+        <video autoplay muted controls style="width: 100%;">
+          <source src="./static/videos/people2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="column is-one-quarter">
+        <video autoplay muted controls style="width: 100%;">
+          <source src="./static/videos/people3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="column is-one-quarter">
+        <video autoplay muted controls style="width: 100%;">
+          <source src="./static/videos/people4.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    <!-- </div> -->
+  </div>
+</section>
+
+<section class="section" style="margin-top: -3em;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Comparison Results</h2>
       </div>
     </div>
 
